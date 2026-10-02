@@ -51,8 +51,10 @@ body::-webkit-scrollbar {
 
 .button {
   width: fit-content;
-  height: auto;
+  box-sizing: border-box;
+  height: 30px;
   display: flex;
+  align-items: center;
   background-color: var(--accent);/*rgb(0, 95, 204);*/
   border-radius: 4px;
   padding: 7px 14px;
@@ -60,6 +62,12 @@ body::-webkit-scrollbar {
   font-weight: 600;
   cursor: pointer;
   margin: 1vw;
+}
+
+.button img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 body {
@@ -160,7 +168,6 @@ textarea {
 
 .headerDisclaimer {
   display: flex;
-  height: fit-content;
   width: auto;
 }
 

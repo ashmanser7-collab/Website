@@ -160,3 +160,12 @@ window.addEventListener("message", event => {
 document.getElementById("reset").addEventListener("click", () => {
     startProgram();
 });
+
+document.getElementById("download-image").addEventListener("click", () => {
+    if (!programReady) return;
+
+    programFrame.contentWindow.postMessage(
+        { type: "photo" },
+        projectOrigin
+    );
+});

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+<div class="bar">
+    <h1 id="heading">Title</h1>
+    <div style="width: auto; height: 100%;"></div>
+    <a href="index.html" ><p>Return To Home</p></a>
+</div>
+
+<div class="canvasContainer">
+    <iframe id="programFrame"></iframe>
+</div>
+
+<div class="consoleContainer">
+    <div class="smallContainer">
+        <h2>Console</h2>
+        <div class="middle-line"></div>
+        <textarea id="console" readonly></textarea>
+    </div>
+</div>
+
+<div class="largeContainer">
+    <div class="smallContainer">
+        <div class="headerDisclaimer">
+            <h2>Variables</h2>
+            <div class="disclaimer">
+                <b>?</b>
+                <span class="disclaimerTrigger">
+                  <span class="disclaimerText">For some projects, the width and height of the simulation are calculated using other parameters (e.g grid based fluid simulations the width is the grid width times the cell size). Therefore, for these simulations changing the width and height sliders only changes the width and height of the rendered screen.</span>
+                </span>
+            </div>
+        </div>
+        <div class="middle-line"></div>
+        <div class="button" id="reset">RESET</div>
+        <div class="variableSection" id="other-variables">
+        </div>
+    </div>
+    <div class="smallContainer">
+        <div class="headerDisclaimer">
+            <h2>Active</h2>
+            <div class="disclaimer">
+                <b>?</b>
+                <span class="disclaimerTrigger">
+                  <span class="disclaimerText">Changes to constant variables only take effect after reset whereas active variables are changed live as the code runs.</span>
+                </span>
+            </div>
+        </div>
+        <div id="active-variables" class="variableSection">
+        </div>
+        <div class="middle-line"></div>
+        <h2>Constant</h2>
+        <div id="constant-variables" class="variableSection">
+        </div>
+    </div>
+</div>
+
+<div class="largeContainer">
+    <div class="smallContainer">
+        <h2>Description</h2>
+        <div class="middle-line"></div>
+        <p id="description">If you are seeing this text it means something has gone wrong and the text for the description that is attached to the data.json file for this project has not loaded correctly. My bad.</p>
+    </div>
+    <div class="smallContainer">
+        <h2>Controls</h2>
+        <div class="middle-line"></div>
+        <p id="controls">If you are seeing this text it means something has gone wrong and the text for the controls that are attached to the data.json file for this project has not loaded correctly. My bad.</p>
+    </div>
+</div>
+
+<script src="../scripts/loadProject.js"></script>
+</body>

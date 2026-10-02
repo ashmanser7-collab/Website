@@ -1,0 +1,209 @@
+:root {
+  --bg: #1e1e1e;
+  --panel: #252526;
+  --panel-light: #303030;
+  --text: rgb(200, 200, 200);
+  --accent: beige;
+  --border: #3c3c3c;
+  --dot-radius: 4px;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: var(--bg);
+  color: black;
+  font-size: 40px;
+  height: auto;
+  position: relative;
+  z-index: -2;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.headerImg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: var(--bg);
+  position: absolute;
+  mask-image: linear-gradient(to top, #333 0%, transparent 50%);
+  box-sizing: border-box;
+}
+
+.section {
+  box-sizing: border-box;
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: var(--panel);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
+  position: sticky;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: left;
+}
+
+.navbarPart {
+  width: auto;
+  padding: 10px;
+  color: var(--text);
+}
+
+.txt {
+  width: 35%;
+  height: auto;
+  text-align: left;
+  border: 0px solid ; 
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--panel-light);
+  color: var(--text);
+}
+
+.img {
+  width: 40%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.seperatorBasic {
+  width: 100%;
+  height: 40px;
+  background-color: var(--panel);
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectSection {
+  box-sizing: border-box;
+  background-color: var(--panel);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.projectTxt {
+  align-content: start;
+  width: 60%;
+  height: auto;
+  padding-inline: 0;
+  margin-top: 0;
+}
+
+.project {
+  width: 40%;
+  height: 100%;
+  gap: 5%;
+  display: flex;
+  cursor: pointer;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+.middle-line {
+  width: 93%;
+  border-top: 1px solid var(--border);
+  height: 0;
+}
+
+.dotSeperator {
+  width: 98%;
+  height: 40px;
+  background-color: var(--panel);
+  align-content: center;
+  position: relative;
+  display: flex;
+}
+.dot {
+  width: var(--dot-radius);
+  height: var(--dot-radius);
+  border-radius: calc(var(--dot-radius)/2);
+  background-color: var(--accent);
+  opacity: 0.5;
+}
+.dotHolder {
+  width: fit-content;
+  height: fit-content;
+  opacity: 0.5;
+  position: absolute;
+}
+
+
+
+.lineSeperator {
+  width: 98%;
+  height: 40px;
+  background-color:  var(--panel);
+  position: relative;
+}
+.linePart {
+  width: 1px;
+  height: 1px;
+  border-radius: 0.5px;
+  background-color: var(--accent);
+  opacity: 0.5;
+}
+.linePartHolder {
+  width: fit-content;
+  height: fit-content;
+  opacity: 0.5;
+  position: absolute;
+}
+
+
+.barSeperator {
+  width: 98%;
+  height: 40px;
+  background-color: var(--panel);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bar {
+  width: 1px;
+  height: 1px;
+  background-color: var(--accent);
+  opacity: 0.5;
+}
+
+footer {
+  background-color: var(--bg);
+}

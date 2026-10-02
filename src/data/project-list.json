@@ -1,0 +1,16 @@
+[
+    {
+        "id": "test-opengl-project",
+        "name": "Test OpenGL project",
+        "description": "This is for testing",
+        "thumbnail": "beaver.png",
+        "type": "OpenGL"
+    },
+    {
+        "id": "solar-system",
+        "name": "Solar System",
+        "description": "A small model of the solar system designed to simulate gravity.",
+        "thumbnail": "beaver.png",
+        "type": "OpenGL"
+    }
+]

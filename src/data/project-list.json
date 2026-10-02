@@ -12,5 +12,12 @@
         "description": "A small model of the solar system designed to simulate gravity.",
         "thumbnail": "solar-system.png",
         "type": "OpenGL"
+    },
+    {
+        "id": "sph",
+        "name": "Smoothed Particle Hydrodynamics",
+        "description": "A basic fluid simulation that uses SPH.",
+        "thumbnail": "sph.png",
+        "type": "OpenGL"
     }
 ]

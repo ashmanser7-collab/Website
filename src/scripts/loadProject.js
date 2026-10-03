@@ -87,12 +87,14 @@ async function loadData() {
         const paragraph = document.createElement("p");
         paragraph.textContent = d;
         description.appendChild(paragraph);
+        console.log(d);
     }
     const controls = document.getElementById("controls");
     for (const c of projectData.controls) {
         const paragraph = document.createElement("p");
         paragraph.textContent = c;
         controls.appendChild(paragraph);
+        console.log(c);
     }
 }
 

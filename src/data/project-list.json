@@ -1,5 +1,19 @@
 [
     {
+        "id": "sph",
+        "name": "Smoothed Particle Hydrodynamics",
+        "description": "A basic fluid simulation that uses SPH.",
+        "thumbnail": "sph.png",
+        "type": "OpenGL"
+    },
+    {
+        "id": "eulerian-fluids",
+        "name": "Eulerian Fluids Simulation",
+        "description": "An interactive grid based fluid simulation that models the behaviour of smoke.",
+        "thumbnail": "sph.png",
+        "type": "OpenGL"
+    },
+    {
         "id": "test-opengl-project",
         "name": "Test OpenGL project",
         "description": "This is for testing",
@@ -11,13 +25,6 @@
         "name": "Solar System",
         "description": "A small model of the solar system designed to simulate gravity.",
         "thumbnail": "solar-system.png",
-        "type": "OpenGL"
-    },
-    {
-        "id": "sph",
-        "name": "Smoothed Particle Hydrodynamics",
-        "description": "A basic fluid simulation that uses SPH.",
-        "thumbnail": "sph.png",
         "type": "OpenGL"
     }
 ]

@@ -105,9 +105,12 @@ iframe {
 }
 
 .variableContainer {
-  width: 50%;
+  box-sizing: border-box;
+  width: calc(50% - 4px);
+  min-width: max-content;
   height: fit-content;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   column-gap: 8px;
   color: var(--text);
@@ -129,6 +132,7 @@ iframe {
   font: inherit;
   text-align: right;
   font-variant-numeric: tabular-nums;
+  font-size: smaller;
 }
 
 input::-webkit-outer-spin-button,
@@ -138,9 +142,9 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="range"] {
-  width: auto;
-  flex: 1;
-  min-width: 0;
+  width: 35px;
+  flex: 1 1 35px;
+  min-width: 35px;
   accent-color: var(--accent);
 }
 

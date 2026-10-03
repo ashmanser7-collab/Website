@@ -83,18 +83,18 @@ async function loadData() {
     }
 
     const description = document.getElementById("description");
+    description.textContent = '';
     for (const d of projectData.description) {
         const paragraph = document.createElement("p");
         paragraph.textContent = d;
         description.appendChild(paragraph);
-        console.log(d);
     }
     const controls = document.getElementById("controls");
+    controls.textContent = '';
     for (const c of projectData.controls) {
         const paragraph = document.createElement("p");
         paragraph.textContent = c;
         controls.appendChild(paragraph);
-        console.log(c);
     }
 }
 
